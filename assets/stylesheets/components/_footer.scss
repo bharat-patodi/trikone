@@ -1,0 +1,38 @@
+/*---------------------------------------------
+Component - Footer
+---------------------------------------------*/
+.trikone__footer {
+  text-align: center;
+  padding: 5rem 2rem;
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+  background-color: $bg-color;
+  color: $black-stan;
+  a:not(.logo) {
+    // color:
+    &:hover {
+      //   color:
+    }
+    &:active {
+      //   color:
+    }
+    &:focus {
+      //   color:
+    }
+  }
+  &__nav-items {
+    max-width: 22rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+  &__nav-item {
+    a {
+      font-weight: 700;
+    }
+    // Till we include internal SVGs
+    img {
+      width: 2rem;
+    }
+  }
+}

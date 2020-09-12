@@ -7,10 +7,12 @@ Import partials
 @import "base/base-styles";
 @import "base/modular";
 @import "helper/mixin";
+@import "components/cards";
 @import "components/accordion";
 @import "components/tooltip";
 @import "pages/home";
-
+@import "pages/neumorphism";
+@import "components/footer";
 /* ---------------------------------------------------------------
 Project Specific Styles
 --------------------------------------------------------------- */
