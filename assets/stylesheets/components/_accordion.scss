@@ -4,13 +4,16 @@
 	h1 {
 		margin: 2rem;
 	}
+
+	h2 {
+		color: $blue-fresh;
+	}
 }
 
 .accordion {
 	margin: 1rem 0;
-	border: 1px solid $black-stan;
 	border-radius: 8px;
-	@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+	@include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
 
 	input {
 		display: none;
@@ -18,7 +21,7 @@
 
 	.tab {
 		overflow: hidden;
-		border-bottom: 1px solid $black-stan;
+		border-bottom: 1px solid $inset-dark;
 	}
 
 	.tab:last-child {
@@ -45,25 +48,25 @@
 		transition: all 0.35s;
 	}
 
-	input[type="checkbox"]:checked ~ .accordion__content {
-		visibility: visible;
-		padding: 1rem;
-		max-height: 100vh;
-	}
-
-	input[type="checkbox"]:checked ~ label i {
-		transform: rotate(90deg);
-	}
-}
-
-.accordion-multiple {
 	input[type="radio"]:checked ~ .accordion__content {
 		visibility: visible;
 		padding: 1rem;
 		max-height: 100vh;
 	}
 
-	input[type="radio"]:checked ~ label i {
+	input[type="radio"]:checked ~ i {
+		transform: rotate(90deg);
+	}
+}
+
+.accordion-multiple {
+	input[type="checkbox"]:checked ~ .accordion__content {
+		visibility: visible;
+		padding: 1rem;
+		max-height: 100vh;
+	}
+
+	input[type="checkbox"]:checked ~ i {
 		transform: rotate(90deg);
 	}
 }
