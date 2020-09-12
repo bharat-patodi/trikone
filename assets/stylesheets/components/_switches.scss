@@ -81,7 +81,7 @@
     @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
     border-radius: 5rem;
 }
-input[type="checkbox"]{
+.slider{
     position: absolute;
     -webkit-appearance:none;
     height: 5rem;
@@ -92,8 +92,8 @@ input[type="checkbox"]{
     outline: none;
     border-radius: 3rem;
 }
-input[type="checkbox"]:before,
-input[type="checkbox"]:after{
+.slider:before,
+.slider:after{
     content: "";
     position: absolute;
     margin:auto;
@@ -101,7 +101,7 @@ input[type="checkbox"]:after{
     bottom: 0;
     transition: 0.3s;
 }
-input[type="checkbox"]:before{
+.slider:before{
     height: 3rem;
     width: 3rem;
     background-color:$bg-color;
@@ -109,16 +109,16 @@ input[type="checkbox"]:before{
     @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
     left: 1rem;
 }
-input[type="checkbox"]:after{
+.slider:after{
     height: 1rem;
     width: 1rem;
     background-color: $bg-color;
     border-radius: 50%;
     right: -4rem;
 }
-input[type="checkbox"]:checked:before{
+.slider:checked:before{
     left: 6rem;
 }
-  input[type="checkbox"]:checked:after{
+  .slider:checked:after{
     background-color: $green-fauna;
 }  

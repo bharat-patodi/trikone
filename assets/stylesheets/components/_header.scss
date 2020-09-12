@@ -1,0 +1,35 @@
+.trikone {
+  &__header {
+    padding: 1.5rem 0 0.5rem 0;
+    // box-shadow: 0px 0px 4px $black-stan;
+    background-color: $bg-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__nav__ul {
+      display: flex;
+    }
+    &__nav-items {
+      margin-left: 10px;
+      :last-child {
+        margin-left: 0;
+      }
+      font-weight: 700;
+    }
+  }
+
+  &__logo {
+    font-weight: 700;
+    display: flex;
+    img {
+      width: 2rem;
+      margin-right: 10px;
+    }
+  }
+}

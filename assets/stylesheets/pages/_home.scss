@@ -1,20 +1,4 @@
 .trikone {
-  &__header {
-    .container {
-      display: flex;
-      justify-content: space-between;
-    }
-    &__nav__ul {
-      display: flex;
-    }
-    &__nav-items {
-      margin-left: 10px;
-      :last-child {
-        margin-left: 0;
-      }
-    }
-  }
-
   &__main {
     // The Hero section
     &__hero {
@@ -23,7 +7,7 @@
       background-size: cover;
       text-align: center;
       // padding: $padding-vertical $padding-horizontal;
-      padding: 5rem 1rem;
+      padding: 10rem 1rem 5rem 1rem;
       img {
         width: 100%;
       }
@@ -62,45 +46,6 @@
           line-height: 6rem;
         }
       }
-    }
-    // Internal link section
-    &__component-links {
-      border: 3px solid orangered;
-      .grid {
-        grid-template-columns: repeat(auto-fit, 150px);
-      }
-      li {
-        border: 3px solid hotpink;
-      }
-    }
-
-    // The all components section
-    &__all-components {
-      &__component {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        border: 3px solid goldenrod;
-        .component-display {
-          // border: 3px solid mediumaquamarine;
-        }
-        .component-html {
-          // border: 3px solid saddlebrown;
-          padding: 10px;
-        }
-        .component-style {
-          // border: 3px solid teal;
-          padding: 10px;
-        }
-      }
-    }
-  }
-
-  &__footer {
-    &__nav-items {
-      display: flex;
-      justify-content: space-around;
-    }
-    &__copyright {
-      text-align: center;
     }
   }
 }
