@@ -1,5 +1,5 @@
 .form-container {
-    @extend .card-container;
+    @extend .card-container !optional;
 }
 
 .form {
