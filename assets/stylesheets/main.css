@@ -350,33 +350,6 @@ Mixins
           transform: rotate(90deg);
 }
 
-.tooltip {
-  padding: 0.5rem 1rem;
-  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
-          box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
-  border-radius: 5px;
-  border: 1px solid #c9c9c6;
-  position: relative;
-}
-
-.tooltip:hover {
-  -webkit-box-shadow: inset 0.2rem 0.2rem 0.5rem #c9c9c6, inset -0.2rem -0.2rem 0.5rem #ffffffef;
-          box-shadow: inset 0.2rem 0.2rem 0.5rem #c9c9c6, inset -0.2rem -0.2rem 0.5rem #ffffffef;
-}
-
-.tooltip-top {
-  position: absolute;
-  padding: 0.35rem 1rem;
-  border-radius: 5px;
-  -webkit-box-shadow: inset 0.2rem 0.2rem 0.5rem #c9c9c6, inset -0.2rem -0.2rem 0.5rem #ffffffef;
-          box-shadow: inset 0.2rem 0.2rem 0.5rem #c9c9c6, inset -0.2rem -0.2rem 0.5rem #ffffffef;
-}
-
-.tooltip-top {
-  top: -2.8rem;
-  right: 33%;
-}
-
 /* ---------------------------------------------------------------
 Project Specific Styles
 --------------------------------------------------------------- */
