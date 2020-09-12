@@ -1,0 +1,17 @@
+/* ---------------------------------------------------------------
+Modular Classes
+--------------------------------------------------------------- */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  max-width: 125ch;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}

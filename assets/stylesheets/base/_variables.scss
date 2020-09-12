@@ -1,0 +1,35 @@
+/* ---------------------------------------------------------------
+Variables
+--------------------------------------------------------------- */
+
+/* Colors Begin */
+$orange-summer: #ffa400;
+$blue-fresh: #067bc2;
+$black-stan: #1c2321;
+$white-dish: #eef0f2;
+// Neumorphic color variables
+$bg-color: #e6e7ee; // customizable
+$offset-dark: #dadada;
+$offset-light: #f3f3f3;
+$offset-normal: #e4e4e4;
+$inset-dark: #c9c9c6;
+$inset-light: #ffffffef;
+/* Colors End */
+
+/* Font Values Begin */
+$primary-font: "Montserrat", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+/* Font Values End */
+
+// TODO: change everything in rems
+
+/* Media Queries Begin */
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large-display: 1024px;
+/* Media Queries End */
+
+/* Padding Values Begin */
+$padding-vertical: 1rem;
+$padding-horizontal: 1.5rem;
+/* Padding Values End*/
