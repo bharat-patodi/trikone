@@ -1,0 +1,55 @@
+.nav-page {
+	margin: 2rem;
+
+	h1 {
+		margin: 2rem;
+	}
+
+	h3 {
+		margin: 2rem 0;
+	}
+}
+
+.nav {
+	@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+	border-radius: 8px;
+	padding: 0.5rem;
+
+	&-items {
+		display: flex;
+		align-items: center;
+	}
+
+	&-item {
+		padding: 0.5rem 1.5rem;
+		position: relative;
+
+		&:hover > .sub-items {
+			display: block;
+		}
+	}
+
+	.sub-items {
+		display: none;
+		position: absolute;
+		top: 110%;
+		left: 25%;
+		padding: 1rem;
+		border-radius: 8px;
+		background-color: $bg-color;
+		@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+	}
+
+	&-item__drowdown {
+		@extend nav-item;
+	}
+
+	&-item__dropdown > a::after {
+		margin-left: 0.8rem;
+		content: "\f078";
+		font-family: "Font Awesome\ 5 Free";
+		font-size: 1rem;
+		font-weight: 900;
+		color: $inset-dark;
+	}
+}
