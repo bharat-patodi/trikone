@@ -4,15 +4,12 @@ Component - Footer
 .trikone__footer {
   text-align: center;
   padding: 5rem 2rem;
-  @media (min-width: 768px) {
-    padding: 2rem;
-  }
   background-color: $bg-color;
   color: $black-stan;
   a:not(.logo) {
     // color:
     &:hover {
-      //   color:
+      color: $orange-summer;
     }
     &:active {
       //   color:
@@ -22,11 +19,15 @@ Component - Footer
     }
   }
   &__nav-items {
+    display: flex;
+    justify-content: center;
+
     max-width: 22rem;
     margin: 0 auto;
     padding: 1rem 0;
   }
   &__nav-item {
+    margin-right: 20px;
     a {
       font-weight: 700;
     }
@@ -34,5 +35,8 @@ Component - Footer
     img {
       width: 2rem;
     }
+  }
+  &__nav-item:last-child {
+    margin-right: 0;
   }
 }

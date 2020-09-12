@@ -1,1 +1,31 @@
-/* No CSS *//*# sourceMappingURL=neumorphism.css.map */
+.neumorphism__main__hero {
+  padding-top: 10rem;
+}
+
+.neumorphism__main__component-links {
+  border: 3px solid orangered;
+}
+
+.neumorphism__main__component-links .grid {
+  -ms-grid-columns: (150px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 150px);
+}
+
+.neumorphism__main__component-links li {
+  border: 3px solid hotpink;
+}
+
+.neumorphism__main__all-components__component {
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border: 3px solid goldenrod;
+}
+
+.neumorphism__main__all-components__component .component-html {
+  padding: 10px;
+}
+
+.neumorphism__main__all-components__component .component-style {
+  padding: 10px;
+}
+/*# sourceMappingURL=neumorphism.css.map */

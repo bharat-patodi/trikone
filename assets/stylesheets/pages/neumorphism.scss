@@ -1,0 +1,37 @@
+.neumorphism__main {
+  // Section: Hero Section
+  &__hero {
+    padding-top: 10rem;
+  }
+
+  // Section: Internal links for components
+  &__component-links {
+    // padding-top: 10rem;
+    border: 3px solid orangered;
+    .grid {
+      grid-template-columns: repeat(auto-fit, 150px);
+    }
+    li {
+      border: 3px solid hotpink;
+    }
+  }
+
+  // Section: All components
+  &__all-components {
+    &__component {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      border: 3px solid goldenrod;
+      .component-display {
+        // border: 3px solid mediumaquamarine;
+      }
+      .component-html {
+        // border: 3px solid saddlebrown;
+        padding: 10px;
+      }
+      .component-style {
+        // border: 3px solid teal;
+        padding: 10px;
+      }
+    }
+  }
+}

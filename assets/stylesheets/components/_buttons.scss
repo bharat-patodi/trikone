@@ -1,0 +1,41 @@
+
+.button {
+    width: 20rem;
+    height: 6rem;
+    background: $bg-color;
+    position: relative;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    span {
+    line-height: 6rem;
+    font-size: 2rem;
+    font-weight: 300;
+    }
+    &:nth-child(1) {
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    color: $blue-fresh;
+    &:active {
+        opacity: 1;
+        @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+        color: $green-fauna;
+    }
+    }
+    &:nth-child(2) {
+        @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+        color: $blue-fresh;
+    &:hover {
+        opacity: 0.3;
+        @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+    }
+    }
+    &:nth-child(3) {
+        @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+    color: $green-fauna;
+    }
+}
+
+// Social-media
+

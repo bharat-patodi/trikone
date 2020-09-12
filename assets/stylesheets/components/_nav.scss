@@ -40,9 +40,9 @@
 		@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
 	}
 
-	&-item__drowdown {
-		@extend nav-item;
-	}
+	// &-item__drowdown {
+	// 	// @extend nav-item;
+	// }
 
 	&-item__dropdown > a::after {
 		margin-left: 0.8rem;

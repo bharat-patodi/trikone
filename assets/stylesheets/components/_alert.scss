@@ -1,0 +1,104 @@
+// MODULAR CLASSES
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+.shadow-offset {
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+}
+.shadow-inset {
+    @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+}
+.alert {
+    padding: $padding-vertical $padding-horizontal;
+    border: $bg-color;
+    border-radius: 10px;
+    margin: 1rem;
+    font-size: (1rem * .875);
+    border: .0625rem solid $offset-light;
+
+    .alert-inner--icon {
+        font-size: (1rem * 1.25);;
+        margin-right: .375rem;
+    }
+    
+    .alert-inner--text {
+        display: inline-block;
+        font-weight: 300;
+        a {
+            font-weight: 500;
+        }
+    }
+    
+    hr {
+        border-top-color: darken($black-stan, 5%);
+    }
+
+    .alert-link {
+        color: $black-stan;
+    }
+}
+
+// ALERT SECTION - Default Alerts
+
+// ICONS_ ALERTS
+.alert-success {
+    .alert-inner--icon,
+    .alert-inner--text,
+    .alert-heading,
+    .fa-check,
+    p {
+        color: $blue-fresh;
+    }
+    strong {
+        color: $blue-fresh;
+        font-weight: 700;
+    }
+    p .fa-check {
+        margin: 0 .5rem;
+    }
+}
+.alert-warning {
+    .alert-inner--icon,
+    .alert-inner--text,
+    .alert-heading,
+    p,
+    p .fa-times {
+        color: $red-tomato;
+    }
+    strong {
+        color: $red-tomato;
+        font-weight: 700;
+    }
+    p .fa-times {
+        margin: 0 .5rem;
+    }
+}
+label {
+    display: inline;
+}
+.toggle:checked ~ .icons-alert-danger {
+    display: none;
+}
+.toggle {
+    display: none;
+}
+.alert {
+    .fa-times {
+        margin: .6rem 0 0 1rem;
+        color: $inset-dark;
+    }
+}
+
+// Extra - content
+.Extra-content-Alerts {
+    :nth-child(1){
+        margin-bottom: 1rem;
+    }
+}
