@@ -4,26 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Neumorphism Love</title>
-    <link rel="stylesheet" href="../../stylesheets/main.css" />
+    <link rel="stylesheet" href="../assets/stylesheets/main.css" />
   </head>
 
-  <body>
+  <body class="neumorphism">
     <main>
       <header class="trikone__header">
         <div class="container">
-          <div class="trikone__logo">Logo</div>
+          <div class="trikone__logo">
+            <img src="../assets/images/icons/pine-cone.svg" alt="logo" />
+            <h3>triKone</h3>
+          </div>
           <nav class="trikone__header__nav">
             <ul class="trikone__header__nav__ul">
-              <li class="trikone__header__nav-items"><a href="#">Home</a></li>
-              <li class="trikone__header__nav-items">
-                <a href="./assets/html/pages/neumorphism.html">UI Trends</a>
-              </li>
-              <li class="trikone__header__nav-items"><a href="#">Team</a></li>
+              <li class="trikone__header__nav-items"><a href="/">Home</a></li>
             </ul>
           </nav>
         </div>
       </header>
-      <section class="trikone__main__component-links">
+      <section class="neumorphism__main__hero">
+        <div class="container">
+          <h2>Neumorphism is a subtle design pattern...</h2>
+          <p>
+            ... that reaches out to the user with the use of soft lighting and a
+            3D aspect. It can be a certain eye-catcher for the first-time user.
+            Also, it doesn't have the wearing-down feel that arises with repeat
+            usage. It can be a long-term choice for your app/website.
+          </p>
+        </div>
+      </section>
+      <section class="neumorphism__main__component-links">
         <div class="container">
           <ul class="grid">
             <li><a href="#">Accordion</a></li>
@@ -49,16 +59,21 @@
           </ul>
         </div>
       </section>
-      <section class="trikone__main__all-components">
+      <section class="neumorphism__main__all-components">
         <div class="container">
-          <div class="trikone__main__all-components__component grid">
+          <!-- Cards -->
+          <div class="neumorphism__main__all-components__component grid">
             <div class="component-display">
-              <div class="card-1 card">
-                <img
-                  class="card__img"
-                  src="https://images.unsplash.com/photo-1591961310354-91ca99664c65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                  alt="placeholder image"
-                />
+              <div class="card">
+                <!-- Basic Card BEGIN -->
+
+                <div class="card__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1591961310354-91ca99664c65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                    alt="placeholder image"
+                  />
+                </div>
+
                 <div class="card__text">
                   <h5 class="card__title">Card title</h5>
                   <p class="card__para">
@@ -76,12 +91,12 @@
               <script src="https://gist.github.com/bharat-patodi/b6c2a567c1a6db61dafb432453afe76d.js"></script>
             </div>
           </div>
-          <div class="trikone__main__all-components__component grid">
+          <div class="neumorphism__main__all-components__component grid">
             <p class="component-display">Here lies the component.</p>
             <p class="component-html">Copy the HTML from here</p>
             <p class="component-style">The styling</p>
           </div>
-          <div class="trikone__main__all-components__component grid">
+          <div class="neumorphism__main__all-components__component grid">
             <p class="component-display">Here lies the component.</p>
             <p class="component-html">Copy the HTML from here</p>
             <p class="component-style">The styling</p>
@@ -93,12 +108,12 @@
       <nav class="trikone__footer__nav">
         <ul class="trikone__footer__nav-items">
           <li class="trikone__footer__nav-item">
-            <a target="_blank" href="https://github.com/AltCampus/trikone"
+            <a target="_blank" href="https://github.com/bharat-patodi/trikone"
               >Credits</a
             >
           </li>
           <li class="trikone__footer__nav-item">
-            <a target="_blank" href="https://github.com/AltCampus/trikone">
+            <a target="_blank" href="https://github.com/bharat-patodi/trikone">
               <img src="../../images/icons/github.svg" alt="Github" />
             </a>
           </li>

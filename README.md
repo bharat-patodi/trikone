@@ -58,7 +58,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [ack]: #acknowledgements-❤️ "Inspirations, and code gifts"
 
 - ReadMe templates from [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) and [hinell](https://github.com/hinell/project-boilerplate/edit/master/README.md).
-- Icon credits:
+- Icon credits: <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 - CSS Reset by Eric Meyer
 - Neumorphism Design Learning -
   http://michalmalewicz.com/
