@@ -152,10 +152,9 @@ Variables
 Base Styles
 --------------------------------------------------------------- */
 body {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.5;
   margin: 0 auto;
-  padding: 0 32px;
   font-family: "Montserrat", sans-serif;
   background: #e6e7ee; }
 
@@ -338,6 +337,88 @@ Mixins
 
 .accordion-multiple input[type="radio"]:checked ~ i {
   transform: rotate(90deg); }
+
+.trikone__header .container {
+  display: flex;
+  justify-content: space-between; }
+.trikone__header__nav__ul {
+  display: flex; }
+.trikone__header__nav-items {
+  margin-left: 10px; }
+  .trikone__header__nav-items :last-child {
+    margin-left: 0; }
+.trikone__main__hero {
+  background-image: url(../images/pollack.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 1rem; }
+  .trikone__main__hero img {
+    width: 100%; }
+  .trikone__main__hero__punchline {
+    font-size: 6rem;
+    line-height: 8rem; }
+    .trikone__main__hero__punchline span {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+      word-break: break-all;
+      word-break: break-word; }
+    @media (max-width: 768px) {
+      .trikone__main__hero__punchline {
+        font-size: 5rem;
+        line-height: 6rem; } }
+.trikone__main__benefits .container {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px; }
+.trikone__main__focus {
+  text-align: center;
+  padding: 5rem 1rem; }
+  .trikone__main__focus__punchline {
+    font-size: 6rem;
+    line-height: 8rem; }
+    @media (max-width: 768px) {
+      .trikone__main__focus__punchline {
+        font-size: 4rem;
+        line-height: 6rem; } }
+.trikone__main__component-links {
+  border: 3px solid orangered; }
+  .trikone__main__component-links .grid {
+    grid-template-columns: repeat(auto-fit, 150px); }
+  .trikone__main__component-links li {
+    border: 3px solid hotpink; }
+.trikone__main__all-components__component {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border: 3px solid goldenrod; }
+  .trikone__main__all-components__component .component-html {
+    padding: 10px; }
+  .trikone__main__all-components__component .component-style {
+    padding: 10px; }
+.trikone__footer__nav-items {
+  display: flex;
+  justify-content: space-around; }
+.trikone__footer__copyright {
+  text-align: center; }
+
+/*---------------------------------------------
+Component - Footer
+---------------------------------------------*/
+.trikone__footer {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #e6e7ee;
+  color: #1c2321; }
+  @media (min-width: 768px) {
+    .trikone__footer {
+      padding: 2rem; } }
+  .trikone__footer__nav-items {
+    max-width: 22rem;
+    margin: 0 auto;
+    padding: 1rem 0; }
+  .trikone__footer__nav-item a {
+    font-weight: 700; }
+  .trikone__footer__nav-item img {
+    width: 2rem; }
 
 /* ---------------------------------------------------------------
 Project Specific Styles
