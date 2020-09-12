@@ -8,9 +8,9 @@
 
 .accordion {
 	margin: 1rem 0;
-	border: 1px solid $black-stan;
+	border: 1px solid $inset-dark;
 	border-radius: 8px;
-	@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+	@include neumorph-offset(1rem, -0.1rem, 0.1rem, 1rem);
 
 	input {
 		display: none;
@@ -18,7 +18,7 @@
 
 	.tab {
 		overflow: hidden;
-		border-bottom: 1px solid $black-stan;
+		border-bottom: 1px solid $inset-dark;
 	}
 
 	.tab:last-child {
@@ -51,7 +51,7 @@
 		max-height: 100vh;
 	}
 
-	input[type="checkbox"]:checked ~ label i {
+	input[type="checkbox"]:checked ~ i {
 		transform: rotate(90deg);
 	}
 }
@@ -63,7 +63,7 @@
 		max-height: 100vh;
 	}
 
-	input[type="radio"]:checked ~ label i {
+	input[type="radio"]:checked ~ i {
 		transform: rotate(90deg);
 	}
 }
