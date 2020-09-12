@@ -1,0 +1,356 @@
+/* ---------------------------------------------------------------
+Import partials
+--------------------------------------------------------------- */
+/* ---------------------------------------------------------------
+CSS Reset (credits to Eric Meyer)
+--------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* ---------------------------------------------------------------
+Variables
+--------------------------------------------------------------- */
+/* Colors Begin */
+/* Colors End */
+/* Font Values Begin */
+/* Font Values End */
+/* Media Queries Begin */
+/* Media Queries End */
+/* Padding Values Begin */
+/* Padding Values End*/
+/* ---------------------------------------------------------------
+Base Styles
+--------------------------------------------------------------- */
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0 32px;
+  font-family: "Montserrat", sans-serif;
+  background: #e6e7ee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+label,
+input {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #1c2321;
+}
+
+html {
+  font-size: 16px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* ---------------------------------------------------------------
+Modular Classes
+--------------------------------------------------------------- */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.container {
+  max-width: 125ch;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+/* ---------------------------------------------------------------
+Mixins
+--------------------------------------------------------------- */
+.accordion-page {
+  margin: 2rem;
+}
+
+.accordion-page h1 {
+  margin: 2rem;
+}
+
+.accordion {
+  margin: 1rem 0;
+  border: 1px solid #1c2321;
+  border-radius: 8px;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+          box-shadow: 0.5rem 0.5rem 0.5rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4;
+}
+
+.accordion input {
+  display: none;
+}
+
+.accordion .tab {
+  overflow: hidden;
+  border-bottom: 1px solid #1c2321;
+}
+
+.accordion .tab:last-child {
+  border: none;
+}
+
+.accordion label {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion label i {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.accordion .accordion__content {
+  max-height: 0;
+  visibility: hidden;
+  color: #2c3e50;
+  padding: 0 1rem;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.accordion input[type="checkbox"]:checked ~ .accordion__content {
+  visibility: visible;
+  padding: 1rem;
+  max-height: 100vh;
+}
+
+.accordion input[type="checkbox"]:checked ~ label i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.accordion-multiple input[type="radio"]:checked ~ .accordion__content {
+  visibility: visible;
+  padding: 1rem;
+  max-height: 100vh;
+}
+
+.accordion-multiple input[type="radio"]:checked ~ label i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* ---------------------------------------------------------------
+Project Specific Styles
+--------------------------------------------------------------- */
+/*# sourceMappingURL=main.css.map */
