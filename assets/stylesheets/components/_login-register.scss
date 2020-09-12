@@ -1,0 +1,101 @@
+.form-container {
+    @extend .card-container;
+}
+
+.form {
+    max-width: 25rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+    &--inset {
+        @extend .form;
+        @include neumorph-inset(0.5rem ,-0.5rem, 1rem);
+    }
+    &__title {
+        margin-bottom: 1rem;
+    }
+    &__title--center {
+        @extend .form__title;
+        text-align: center;
+    }
+    &__img {
+        @extend .flex;
+        justify-content: center;
+        margin: 1rem;
+        img {
+          border-radius: 50%;
+        }
+    }
+    input,
+    button {
+        border: 0;
+        outline: 0;
+        background: transparent;
+    }
+    [type="checkbox"] {
+        margin-right: 0.3rem;
+    }
+    label {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    &__input {
+        width: 100%;
+        margin: 0.5rem 0 1rem 0;
+        border-radius: 0.5rem;
+        padding: 0.7rem 1rem;
+        @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+    }
+    &__input--inline {
+        display: inline-block;
+        margin: 0;
+        max-width: 13rem;
+        @extend .form__input;
+    }
+    &__input--offset {
+        @extend .form__input;
+        @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    }
+    &__submit {
+        @extend .card__button;
+        margin-top: 0.5rem;
+        padding: 0.7rem 1.5rem;
+    }
+    &__submit--inset {
+        @extend .form__submit;
+        @extend .card__button--inset;
+    }
+    &__center-container {
+        text-align: center;
+    }
+    &__cancel {
+        @extend .card__button--inset;
+    }
+    &__cancel--offset {
+        @extend .card__button;
+    }
+    &__terms {
+        @extend .flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 0.5rem;
+    }
+    &__terms--center {
+        @extend .form__terms;
+        justify-content: center;
+    }
+    &__options {
+        margin-top: 1.5rem;
+    }
+    .inline-inputs {
+        @extend .flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5rem 0;
+    }
+}
+
+// .long-form {
+//     @extend .form;
+//     width: 30rem;
+// }
