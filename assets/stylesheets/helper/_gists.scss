@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------------
+Gists
+--------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Droid+Sans+Mono");
+
+body {
+  .gist {
+    .gist-data {
+      // Probably add a grey variable later
+      background-color: #dddddd;
+    }
+
+    .blob-wrapper {
+      border-radius: 0;
+    }
+
+    .highlight {
+      font-family: "Droid Sans Mono", monospace;
+      background-color: transparent;
+      font-size: 16px;
+    }
+
+    .highlight td {
+      //   td has the inheriting issue
+      line-height: 1.5;
+      //   padding: 5px 15px;
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    .blob-num {
+      color: $white-dish;
+      background-color: $blue-fresh;
+      //   Avoid the click events
+      pointer-events: none;
+    }
+
+    .gist-meta {
+      // Hide the made with github -- doesn't look great
+      display: none;
+    }
+  }
+}
