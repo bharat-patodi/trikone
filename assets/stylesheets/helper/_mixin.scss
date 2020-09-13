@@ -20,9 +20,3 @@ Mixins
 // The following is important guideline - don't delete
 // btn-box-shadow and icons-neu-effect = @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
 // card-neu-effect = @include neumorph-inset(0.5rem ,-0.5rem, 1rem);
-
-@mixin text-neumorph-offset($offset1, $offset2, $blur, $offset3) {
-	text-shadow: $offset1 $offset1 $offset1 $offset-dark,
-		$offset2 $offset2 $blur $offset-light,
-		inset $offset3 $offset3 $offset3 $offset-normal;
-}

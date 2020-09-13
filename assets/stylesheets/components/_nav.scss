@@ -1,27 +1,23 @@
-.nav-page {
-	margin: 2rem;
-
-	h1 {
-		margin: 2rem;
-	}
-
-	h3 {
-		margin: 2rem 0;
-	}
-}
-
 .nav {
 	@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
 	border-radius: 8px;
 	padding: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	input[type="checkbox"] {
+		display: none;
+	}
 
 	&-items {
 		display: flex;
 		align-items: center;
 	}
 
-	&-item {
-		padding: 0.5rem 1.5rem;
+	&-item,
+	%nav-item {
 		position: relative;
 
 		&:hover > .sub-items {
@@ -29,27 +25,160 @@
 		}
 	}
 
+	.nav-item:hover {
+		border-radius: 8px;
+		@include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+	}
+
+	/* Drop Down */
+
+	&-item__dropdown {
+		@extend %nav-item;
+
+		& > a::after {
+			margin-left: 0.8rem;
+			content: "\f078";
+			font-family: "Font Awesome\ 5 Free";
+			font-size: 1rem;
+			font-weight: 900;
+			color: $inset-dark;
+			display: inline-block;
+		}
+	}
+
 	.sub-items {
 		display: none;
 		position: absolute;
-		top: 110%;
+		z-index: 1;
+		top: 100%;
 		left: 25%;
-		padding: 1rem;
 		border-radius: 8px;
 		background-color: $bg-color;
 		@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
 	}
 
-	// &-item__drowdown {
-	// 	// @extend nav-item;
-	// }
+	a {
+		display: inline-block;
+		padding: 0.8rem 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 
-	&-item__dropdown > a::after {
-		margin-left: 0.8rem;
-		content: "\f078";
-		font-family: "Font Awesome\ 5 Free";
-		font-size: 1rem;
-		font-weight: 900;
-		color: $inset-dark;
+	.sub-item {
+		&:hover {
+			border-radius: 8px;
+			@include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+		}
+	}
+
+	/* Multi Level Dropdown */
+
+	.sub-sub-items {
+		display: none;
+		background-color: $bg-color;
+		border-radius: 8px;
+		position: absolute;
+		@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+		z-index: 2;
+		top: 50%;
+		right: -68%;
+	}
+
+	.sub-item__dropdown {
+		@extend %nav-item;
+		position: relative;
+
+		& > a::after {
+			margin-left: 0.8rem;
+			content: "\f054";
+			font-family: "Font Awesome\ 5 Free";
+			font-size: 1rem;
+			font-weight: 900;
+			color: $inset-dark;
+			display: inline-block;
+		}
+
+		&:hover > .sub-sub-items {
+			display: block;
+		}
+	}
+
+	.sub-sub-item {
+		@extend .sub-item;
+	}
+}
+
+@media screen and (max-width: $breakpoint-desktop) {
+	.nav {
+		.nav-items {
+			display: none;
+			position: absolute;
+		}
+
+		.collapse,
+		%label {
+			display: block;
+			width: 2.5rem;
+			height: 5px;
+			border-radius: 8px;
+			margin: 5px 1rem 0 5px;
+			background-color: $bg-color;
+			@include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+		}
+
+		label::before,
+		%label-before {
+			content: "";
+			display: block;
+			@extend %label;
+		}
+
+		label::after {
+			@extend %label-before;
+		}
+
+		input[type="checkbox"]:checked ~ .nav-items {
+			display: block;
+			z-index: 999;
+			top: 120%;
+			right: 2%;
+			background-color: $bg-color;
+			@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+			border-radius: 8px;
+		}
+
+		a {
+			flex-direction: row-reverse;
+		}
+
+		.nav-item__dropdown > a::after {
+			content: "\f053";
+		}
+
+		.sub-items {
+			left: -100%;
+			right: 100%;
+			top: 10%;
+			margin-right: 0.5rem;
+		}
+
+		.sub-item__dropdown {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+		}
+
+		.sub-item__dropdown > a::after {
+			content: "\f053";
+			margin-right: 0.8rem;
+		}
+
+		.sub-sub-items {
+			left: -100%;
+			right: 100%;
+			top: 10%;
+			margin-right: 0.5rem;
+		}
 	}
 }
