@@ -1312,6 +1312,9 @@ Component - Footer
       .trikone__main__hero__punchline {
         font-size: 5rem;
         line-height: 6rem; } }
+.trikone__main .punchline__text {
+  font-size: 1.2rem;
+  line-height: 2rem; }
 .trikone__main__benefits .container {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 1rem; }
@@ -1337,6 +1340,8 @@ Component - Footer
 
 .neumorphism__main__hero {
   padding-top: 10rem; }
+  .neumorphism__main__hero h2 + p {
+    margin-bottom: 50px; }
 .neumorphism__main__component-links .grid, .neumorphism__main__component-links .button-wrapper, .neumorphism__main__component-links .button-container {
   grid-template-columns: repeat(auto-fit, 150px); }
 .neumorphism__main__all-components__component {
