@@ -29,24 +29,24 @@
     </section>
 
     <!-- ICONS -->
-    <section class="Icons-Alerts container row">
+    <section class="Icons-Alerts container flex-switch">
         <!-- OFFSET -->
-        <div class="alert alert-success shadow-offset row" >
-            <div>
+        <div class="row" >
+            <div class="alert alert-success shadow-offset">
                 <span class="alert-inner--icon"><i class="far fa-check-circle"></i></span></span>
                 <span class="alert-inner--text"><strong>Confirmed!</strong> No issues in site.</span>
+                <label for="close-button"><i class="fas fa-times"></i></label>
+                <input type="checkbox" class="toggle" id="close-button">
             </div>
-            <label for="close-button"><i class="fas fa-times"></i></label>
-            <input type="checkbox" class="toggle" id="close-button">
         </div>
         <!-- INSET -->
-        <div class="alert alert-warning shadow-inset row" >
-            <div>
+        <div class="row" >
+            <div class="alert alert-success shadow-offset">
                 <span class="alert-inner--icon"><span class="fas fa-exclamation-circle"></span></span>
                 <span class="alert-inner--text "><strong>Wait!</strong> There could be trouble ahead!</span>
+                <label for="close-button"><i class="fas fa-times"></i></label>
+                <input type="checkbox" class="toggle" id="close-button">
             </div>
-            <label for="close-button"><i class="fas fa-times"></i></label>
-            <input type="checkbox" class="toggle" id="close-button">
         </div>
     </section>
 

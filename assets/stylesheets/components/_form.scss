@@ -1,3 +1,7 @@
+.flex-form {
+    display: flex;
+    flex-direction: column;
+}
 .form {
     &__color-input {
         @extend .form__input--inline;

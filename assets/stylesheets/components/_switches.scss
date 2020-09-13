@@ -10,13 +10,14 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.flex-switch {
+    display: flex;
+    flex-direction: column;
+}
 .switch {
     font-size: .9rem;
     width: 100%;
     margin: .9rem 0;
-    display: flex;
-    justify-content: space-around;
 }
 .switch-label {
     width: 8rem;
@@ -76,8 +77,6 @@
 .toggle-switch {
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
-    left: 44%;
     @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
     border-radius: 5rem;
 }

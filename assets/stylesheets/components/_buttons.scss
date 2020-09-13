@@ -1,24 +1,39 @@
+// to structure buttons
+
+.button-wrapper {
+    @extend .grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(minmax(280px, 1fr));
+}
+
+.button-container {
+    @extend .button-wrapper;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+
+// button style
+
 .button {
-    width: 8rem;
-    height: 3rem;
+    padding: 0.7rem 1.5rem;
     background: $bg-color;
-    position: relative;
-    margin-bottom: 1.5rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     text-align: center;
     cursor: pointer;
+    display: inline-block;
     transition: all 0.1s ease-in-out;
     span {
-    line-height: 3rem;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 500;
     }
 }
 .button-click {
     @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
     color: $blue-fresh;
     &:active {
-        opacity: 0.8;
         @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
         color: $green-fauna;
     }
@@ -27,12 +42,10 @@
     @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
     color: $blue-fresh;
     &:hover {
-        opacity: 0.3;
         @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
     }
 }
 .button-clicked {
-    opacity: 0.8;
     @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
     color: $green-fauna;
 }
@@ -49,7 +62,7 @@
 }
 .flex-center_space-between {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:space-between;
     align-items: center;
   }
