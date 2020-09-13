@@ -210,9 +210,11 @@ html {
 @media (max-width: 1024px) {
   html {
     font-size: 14px; } }
+
 @media (max-width: 768px) {
   html {
     font-size: 12px; } }
+
 /* ---------------------------------------------------------------
 Modular Classes
 --------------------------------------------------------------- */
@@ -278,6 +280,7 @@ Mixins
   visibility: visible;
   padding: 1rem;
   max-height: 100vh; }
+
 .accordion-multiple input[type="checkbox"]:checked ~ i {
   transform: rotate(90deg); }
 
@@ -323,9 +326,11 @@ Mixins
 .alert-success .fa-check,
 .alert-success p {
   color: #218b52; }
+
 .alert-success strong {
   color: #218b52;
   font-weight: 700; }
+
 .alert-success p .fa-check {
   margin: 0 .5rem; }
 
@@ -335,9 +340,11 @@ Mixins
 .alert-warning p,
 .alert-warning p .fa-times {
   color: #d63230; }
+
 .alert-warning strong {
   color: #d63230;
   font-weight: 700; }
+
 .alert-warning p .fa-times {
   margin: 0 .5rem; }
 
@@ -633,9 +640,11 @@ label {
 .facebook facebook .fa-facebook-f,
 .facebook p {
   color: #292929; }
+
 .facebook strong {
   color: #292929;
   font-weight: 700; }
+
 .facebook .fa-facebook-f {
   margin-right: .5rem; }
 
@@ -645,9 +654,11 @@ label {
 .twitter twitter .fa-twitter,
 .twitter p {
   color: #1da1f2; }
+
 .twitter strong {
   color: #1da1f2;
   font-weight: 700; }
+
 .twitter .fa-twitter {
   margin-right: .5rem; }
 
@@ -657,9 +668,11 @@ label {
 .github github .fa-github,
 .github p {
   color: black; }
+
 .github strong {
   color: black;
   font-weight: 700; }
+
 .github .fa-github {
   margin-right: .5rem; }
 
@@ -792,7 +805,10 @@ label {
 
 .tooltip:hover {
   box-shadow: inset 0.2rem 0.2rem 0.5rem #c9c9c6, inset -0.2rem -0.2rem 0.5rem #ffffffef; }
-  .tooltip:hover > .tooltip-top, .tooltip:hover > .tooltip-bottom, .tooltip:hover > .tooltip-left, .tooltip:hover > .tooltip-right {
+  .tooltip:hover > .tooltip-top,
+  .tooltip:hover > .tooltip-bottom,
+  .tooltip:hover > .tooltip-left,
+  .tooltip:hover > .tooltip-right {
     display: block; }
 
 .tooltip-top,
@@ -950,9 +966,11 @@ label {
       .trikone__main__hero__punchline {
         font-size: 5rem;
         line-height: 6rem; } }
+
 .trikone__main__benefits .container {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 10px; }
+
 .trikone__main__focus {
   text-align: center;
   padding: 5rem 1rem; }
@@ -966,8 +984,10 @@ label {
 
 .neumorphism__main__hero {
   padding-top: 10rem; }
+
 .neumorphism__main__component-links .grid {
   grid-template-columns: repeat(auto-fit, 150px); }
+
 .neumorphism__main__all-components__component {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0.5rem 2rem;
@@ -1020,6 +1040,7 @@ Component - Footer
     font-weight: 700; }
     .trikone__header__nav-items :last-child {
       margin-left: 0; }
+
 .trikone__logo {
   font-weight: 700;
   display: flex; }
@@ -1032,25 +1053,28 @@ Gists
 --------------------------------------------------------------- */
 body .gist .gist-data {
   background-color: #dddddd; }
+
 body .gist .blob-wrapper {
   border-radius: 0; }
+
 body .gist .highlight {
   font-family: "Droid Sans Mono", monospace;
   background-color: transparent;
   font-size: 16px; }
+
 body .gist .highlight td {
   line-height: 1.5;
   font-family: inherit;
   font-size: inherit; }
+
 body .gist .blob-num {
   color: #eef0f2;
   background-color: #067bc2;
   pointer-events: none; }
+
 body .gist .gist-meta {
   display: none; }
 
 /* ---------------------------------------------------------------
 Project Specific Styles
 --------------------------------------------------------------- */
-
-/*# sourceMappingURL=main.css.map */

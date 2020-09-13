@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form components</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+</head>
+<body class="form-container">
+    <form class="form" action="" method="">
+        <label for="firstname">Username:</label>
+        <input class="form__input" type="text" placeholder="Enter your name" name="username" required>
+
+        <label for="disable">Disable:</label>
+        <input class="form__input" type="text" placeholder="This is a disabled input" name="disable" disabled>
+        
+        <label for="useremail">Email:</label>
+        <input class="form__input" type="email" placeholder="Enter your email" name="useremail" required>
+
+        <label for="phone">Phone:</label>
+        <input class="form__input" type="tel" placeholder="Enter mobile No." name="phone" required>
+
+        <label for="password">Password:</label>
+        <input class="form__input" type="password" placeholder="Enter your password" name="password">
+
+        <label for="url">Url:</label>
+        <input class="form__input" type="url" placeholder="Enter url" name="url">
+    </form>
+
+    <form class="form" action="" method="">
+        <div class="inline-inputs--small">
+            <label for="color">Color:</label>
+            <input class="form__input--inline color-input" type="color" placeholder="Choose your color" name="address">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="phone">Month:</label>
+            <input class="form__input--inline" type="month" placeholder="Choose month" name="month">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="number">Age:</label>
+            <input class="form__input--inline" type="number" placeholder="Choose age" name="number">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="search">Search:</label>
+            <input class="form__input--inline" type="search" placeholder="Search" name="search">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="time">Time:</label>
+            <input class="form__input--inline" type="time" placeholder="Choose time" name="time">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="week">Week:</label>
+            <input class="form__input--inline" type="week" placeholder="Choose week" name="week">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="birthdate">Birth Date:</label>
+            <input class="form__input--inline" type="date" placeholder="Choose birth date" name="birthdate">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="datetime-local">Datetime-local:</label>
+            <input class="form__input--inline" type="datetime-local" placeholder="Choose date and time" name="datetime-local">
+        </div>
+
+        
+        <label for="Address">State:</label>
+        <select class="form__input" placeholder="Enter your distric">
+            <option value="firststate"></option>
+            <option value="secondstate"></option>
+            <option value="thirdstate"></option>
+        </select>
+
+        <label for="Address">State:</label>
+        <select class="form__input" placeholder="Enter your state">
+            <option value="firstdistric"></option>
+            <option value="seconddistric"></option>
+            <option value="thirddistric"></option>
+        </select>
+
+        <!-- <label for="Address">PIN:</label>
+        <input class="form__input" type="number" placeholder="Enter your PIN" name="address" required>
+
+        <label for="Address">Address:</label>
+        <input class="form__input" type="text" placeholder="Enter your address" name="address" required> -->
+    </form>
+</body>
+</html>
