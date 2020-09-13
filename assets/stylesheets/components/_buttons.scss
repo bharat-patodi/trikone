@@ -1,9 +1,17 @@
 // to structure buttons
 
-.button-container {
-    @extend .flex;
-    justify-content: space-evenly;
+.button-wrapper {
+    @extend .grid;
+    justify-content: space-between;
     align-items: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(minmax(280px, 1fr));
+}
+
+.button-container {
+    @extend .button-wrapper;
+    margin-left: 5rem;
+    margin-top: 5rem;
 }
 
 
@@ -54,7 +62,7 @@
 }
 .flex-center_space-between {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:space-between;
     align-items: center;
   }
