@@ -7,6 +7,7 @@ Import partials
 @import "base/base-styles";
 @import "base/modular";
 @import "helper/mixin";
+@import "helper/gists";
 @import "components/accordion";
 @import "components/alert";
 @import "components/cards";
@@ -21,6 +22,8 @@ Import partials
 @import "components/header";
 @import "components/badges";
 @import "components/radio";
+@import "pages/home";
+@import "pages/neumorphism";
 
 /* ---------------------------------------------------------------
 Project Specific Styles
