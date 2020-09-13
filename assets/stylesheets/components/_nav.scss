@@ -107,6 +107,33 @@
 	.sub-sub-item {
 		@extend .sub-item;
 	}
+
+	.mega-dropdown {
+		position: static;
+
+		.mega-nav {
+			display: none;
+			position: absolute;
+			top: 120%;
+			left: 5%;
+			right: 5%;
+			background-color: $bg-color;
+			border-radius: 10px;
+			padding: 1rem;
+			@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+		}
+
+		&:hover > .mega-nav {
+			display: flex;
+			justify-content: space-evenly;
+			flex-flow: row wrap;
+		}
+
+		.mega-item:hover {
+			border-radius: 8px;
+			@include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+		}
+	}
 }
 
 @media screen and (max-width: $breakpoint-desktop) {
@@ -153,7 +180,7 @@
 		}
 
 		.nav-item__dropdown > a::after {
-			content: "\f053";
+			content: "\f052";
 		}
 
 		.sub-items {
@@ -170,7 +197,7 @@
 		}
 
 		.sub-item__dropdown > a::after {
-			content: "\f053";
+			content: "\f052";
 			margin-right: 0.8rem;
 		}
 
@@ -179,6 +206,33 @@
 			right: 100%;
 			top: 10%;
 			margin-right: 0.5rem;
+		}
+	}
+
+	.nav-fluid {
+		.nav-items {
+			z-index: 998;
+		}
+
+		.mega-dropdown {
+			.mega-nav {
+				position: fixed;
+				z-index: 999;
+				top: 2%;
+				bottom: 2%;
+				left: 2%;
+				right: 2%;
+				justify-content: space-between;
+			}
+
+			&:hover .mega-nav {
+				flex-direction: column;
+				justify-content: flex-start;
+			}
+
+			.mega-item a {
+				flex-direction: row;
+			}
 		}
 	}
 }
