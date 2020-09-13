@@ -17,18 +17,17 @@
   // Section: All components
   &__all-components {
     &__component {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      margin: 0.5rem 2rem;
-      padding: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin: 5rem 0;
+      // padding: 1rem;
       .component-display {
         // border: 3px solid mediumaquamarine;
+        @media (max-width: $breakpoint-tablet) {
+          margin: 0 auto 2rem auto;
+        }
       }
       .component-html {
         // border: 3px solid saddlebrown;
-        padding: 0 1rem;
-      }
-      .component-style {
-        // border: 3px solid teal;
         padding: 0 1rem;
       }
     }

@@ -376,14 +376,14 @@ label {
 
 .card-container, .form-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 3rem;
   align-items: center;
   justify-content: space-evenly;
   margin: 3rem; }
 
 .card, .card--inset {
-  max-width: 20rem;
+  max-width: 30rem;
   border-radius: 0.7rem;
   box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4; }
   .card--inset {
@@ -1023,12 +1023,12 @@ label {
   grid-template-columns: repeat(auto-fit, 150px); }
 
 .neumorphism__main__all-components__component {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 0.5rem 2rem;
-  padding: 1rem; }
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 5rem 0; }
+  @media (max-width: 768px) {
+    .neumorphism__main__all-components__component .component-display {
+      margin: 0 auto 2rem auto; } }
   .neumorphism__main__all-components__component .component-html {
-    padding: 0 1rem; }
-  .neumorphism__main__all-components__component .component-style {
     padding: 0 1rem; }
 
 /*---------------------------------------------
