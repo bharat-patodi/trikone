@@ -218,7 +218,7 @@ html {
 /* ---------------------------------------------------------------
 Modular Classes
 --------------------------------------------------------------- */
-.flex, .card__icons--left, .card__icons--right, .card__icons--center, .card__icons--left li, .card__icons--right li, .card__icons--center li, .form__img, .form__terms, .form__terms--center, .form .inline-inputs, .form--inset .inline-inputs {
+.flex, .card__icons--left, .card__icons--right, .card__icons--center, .card__icons--left li, .card__icons--right li, .card__icons--center li, .button-container, .form__img, .form__terms, .form__terms--center, .form .inline-inputs, .form--inset .inline-inputs {
   display: flex;
   justify-content: space-between; }
 
@@ -547,12 +547,17 @@ label {
 .slider:checked:after {
   background-color: #218b52; }
 
+.button-container {
+  justify-content: space-evenly;
+  align-items: center; }
+
 .button {
   padding: 0.7rem 1.5rem;
   background: #e6e7ee;
   border-radius: 1.5rem;
   text-align: center;
   cursor: pointer;
+  display: inline-block;
   transition: all 0.1s ease-in-out; }
   .button span {
     font-size: 1rem;
@@ -790,7 +795,7 @@ label {
 
 .tooltip-page {
   margin: 2rem; }
-  .tooltip-page .flex, .tooltip-page .card__icons--left, .tooltip-page .card__icons--right, .tooltip-page .card__icons--center, .tooltip-page .card__icons--left li, .card__icons--left .tooltip-page li, .tooltip-page .card__icons--right li, .card__icons--right .tooltip-page li, .tooltip-page .card__icons--center li, .card__icons--center .tooltip-page li, .tooltip-page .form__img, .tooltip-page .form__terms, .tooltip-page .form__terms--center, .tooltip-page .form .inline-inputs, .form .tooltip-page .inline-inputs, .tooltip-page .form--inset .inline-inputs, .form--inset .tooltip-page .inline-inputs {
+  .tooltip-page .flex, .tooltip-page .card__icons--left, .tooltip-page .card__icons--right, .tooltip-page .card__icons--center, .tooltip-page .card__icons--left li, .card__icons--left .tooltip-page li, .tooltip-page .card__icons--right li, .card__icons--right .tooltip-page li, .tooltip-page .card__icons--center li, .card__icons--center .tooltip-page li, .tooltip-page .button-container, .tooltip-page .form__img, .tooltip-page .form__terms, .tooltip-page .form__terms--center, .tooltip-page .form .inline-inputs, .form .tooltip-page .inline-inputs, .tooltip-page .form--inset .inline-inputs, .form--inset .tooltip-page .inline-inputs {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;

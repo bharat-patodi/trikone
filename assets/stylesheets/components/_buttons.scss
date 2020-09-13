@@ -1,9 +1,21 @@
+// to structure buttons
+
+.button-container {
+    @extend .flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+// button style
+
 .button {
     padding: 0.7rem 1.5rem;
     background: $bg-color;
     border-radius: 1.5rem;
     text-align: center;
     cursor: pointer;
+    display: inline-block;
     transition: all 0.1s ease-in-out;
     span {
     font-size: 1rem;
