@@ -1,0 +1,21 @@
+.form {
+    &__color-input {
+        @extend .form__input--inline;
+        width: 5rem;
+        padding: 0.3rem;
+        height: 3rem;
+    }
+    &__select {
+        @extend .form__input;
+        border: 0;
+        outline: 0;
+        background: $bg-color;
+    }
+    &__textarea {
+        @extend .form__input;
+        border: 0;
+        outline: 0;
+        width: 100%;
+        background: $bg-color;
+    }
+}
