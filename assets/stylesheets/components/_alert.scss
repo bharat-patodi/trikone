@@ -15,7 +15,8 @@
 .shadow-inset {
     @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
 }
-.alert {
+.alert,
+.badges {
     padding: $padding-vertical $padding-horizontal;
     border: $bg-color;
     border-radius: 10px;
@@ -28,7 +29,8 @@
         margin-right: .375rem;
     }
     
-    .alert-inner--text {
+    .alert-inner--text,
+    .badges-text {
         display: inline-block;
         font-weight: 300;
         a {
