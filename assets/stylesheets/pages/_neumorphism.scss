@@ -1,3 +1,8 @@
+// For overriding the fixed header issue
+.neumorphism .trikone__header {
+  position: static;
+}
+
 .neumorphism__main {
   // Section: Hero Section
   &__hero {
