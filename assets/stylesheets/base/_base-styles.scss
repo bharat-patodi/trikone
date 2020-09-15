@@ -1,0 +1,88 @@
+/* ---------------------------------------------------------------
+Base Styles
+--------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+
+body {
+  // font-size: calc(16px + 1vw);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  font-family: $primary-font;
+  background: $bg-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $secondary-font;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+label,
+input {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: $black-stan;
+}
+
+html {
+  font-size: 16px;
+}
+
+// aligning
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: $breakpoint-large-display) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  html {
+    font-size: 12px;
+  }
+}

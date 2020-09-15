@@ -1,0 +1,76 @@
+.state {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1e-5;
+    pointer-events: none;
+}
+.label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: $black-stan;
+}
+  
+.text {
+    margin-left: 1rem;
+    opacity: .6;
+    transition: opacity .2s linear, transform .2s ease-out;
+}
+  
+.indicator {
+    position: relative;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    overflow: hidden;
+}
+  
+.indicator::before,
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+  
+.indicator::before {
+    @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+}
+  
+.indicator::after {
+    background-color: $bg-color;
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    transform: scale3d(1, 1, 1);
+    transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+}
+  
+.state:checked ~ .label .indicator::after {
+    transform: scale3d(.975, .975, 1) translate3d(0, 10%, 0);
+    opacity: 0;
+}
+  
+.state:focus ~ .label .text {
+    transform: translate3d(8px, 0, 0);
+    opacity: 1;
+}
+  
+.label:hover .text {
+    opacity: 1;
+}
+.blink-sucess {
+    color: $green-fauna;
+}
+.blink-failed {
+    color: $red-tomato;
+}
+.blink-test {
+    color: $blue-fresh;
+}
+.blink-confirm {
+    color: $orange-summer;
+}

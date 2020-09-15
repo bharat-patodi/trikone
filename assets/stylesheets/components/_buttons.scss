@@ -1,0 +1,177 @@
+// to structure buttons
+
+.button-wrapper {
+    @extend .grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(minmax(280px, 1fr));
+}
+
+.button-container {
+    @extend .button-wrapper;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+
+
+// button style
+
+.button {
+    padding: 0.7rem 1.5rem;
+    background: $bg-color;
+    border-radius: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.1s ease-in-out;
+    span {
+    font-size: 1rem;
+    font-weight: 500;
+    }
+}
+.button-click {
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    color: $blue-fresh;
+    &:active {
+        @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+        color: $green-fauna;
+    }
+}
+.button-hover {
+    @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+    color: $blue-fresh;
+    &:hover {
+        @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+    }
+}
+.button-clicked {
+    @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+    color: $green-fauna;
+}
+// Social-media-round
+
+.social-media-circle {
+    margin: 0 8rem;
+}
+.flex-center {
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+}
+.flex-center_space-between {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+  }
+
+.buttons-container {
+  width:60%;
+  flex-wrap: wrap;
+}
+
+.social-button {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+  margin-bottom: 1em;
+  &:hover {
+    cursor:pointer;
+    @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+  }
+}
+
+.facebook:hover {
+  color: #292929;
+}
+
+.twitter:hover {
+    color: #1da1f2;
+}
+
+.instagram:hover {
+    color: $green-fauna;
+}
+
+.github:hover {
+    color: black;
+}
+
+// Social-media-bar
+.social-media-bar {
+    padding: $padding-vertical $padding-horizontal;
+    border: $bg-color;
+    border-radius: 10px;
+    margin: 1rem;
+    font-size: (1rem * .875);
+    border: .0625rem solid $offset-light;
+    cursor: pointer;
+    .alert-inner--icon {
+        font-size: (1rem * 1.25);;
+        margin-right: .375rem;
+    }
+    .alert-inner--text {
+        display: inline-block;
+        font-weight: 300;
+        a {
+            font-weight: 500;
+        }
+    }
+    
+    hr {
+        border-top-color: darken($black-stan, 5%);
+    }
+
+    .alert-link {
+        color: $black-stan;
+    }
+    &:active {
+        opacity: 0.8;
+        @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+    }
+}
+.facebook {
+    .alert-inner--icon,
+    .alert-inner--text,
+    .alert-heading,
+    facebook .fa-facebook-f,
+    p {
+        color: #292929;
+    }
+    strong {
+        color: #292929;
+        font-weight: 700;
+    }
+}
+.twitter {
+    .alert-inner--icon,
+    .alert-inner--text,
+    .alert-heading,
+    twitter .fa-twitter,
+    p {
+        color: #1da1f2;
+    }
+    strong {
+        color: #1da1f2;
+        font-weight: 700;
+    }
+}
+.github{
+    .alert-inner--icon,
+    .alert-inner--text,
+    .alert-heading,
+    github .fa-github,
+    p {
+        color: black;
+    }
+    strong {
+        color: black;
+        font-weight: 700;
+    }
+}
+.social-media-text {
+    margin-left: .5rem;
+}

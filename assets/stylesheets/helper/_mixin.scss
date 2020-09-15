@@ -1,0 +1,22 @@
+/* ---------------------------------------------------------------
+Mixins
+--------------------------------------------------------------- */
+
+@mixin neumorph-offset($offset1, $offset2, $blur, $offset3) {
+	box-shadow: $offset1 $offset1 $offset1 $offset-dark,
+		$offset2 $offset2 $blur $offset-light,
+		inset $offset3 $offset3 $offset3 $offset-normal;
+}
+
+// The following is important guideline - don't delete
+// btn-box-shadow and icons-neu-effect = @include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
+// card-neu-effect = @include neumorph-offset(1rem ,-0.1rem, 0.1rem, 1rem);
+
+@mixin neumorph-inset($offset1, $offset2, $blur) {
+	box-shadow: inset $offset1 $offset1 $blur $inset-dark,
+		inset $offset2 $offset2 $blur $inset-light;
+}
+
+// The following is important guideline - don't delete
+// btn-box-shadow and icons-neu-effect = @include neumorph-inset(0.2rem, -0.2rem, 0.5rem);
+// card-neu-effect = @include neumorph-inset(0.5rem ,-0.5rem, 1rem);

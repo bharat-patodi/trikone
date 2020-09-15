@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form components</title>
+    <link rel="stylesheet" href="../../stylesheets/main.css">
+</head>
+<body class="form-container flex-form">
+    <form class="form" action="" method="">
+        <label for="firstname">Username:</label>
+        <input class="form__input" type="text" placeholder="Enter your name" name="username" required>
+
+        <label for="disable">Disable:</label>
+        <input class="form__input" type="text" placeholder="This is a disabled input" name="disable" disabled>
+        
+        <label for="useremail">Email:</label>
+        <input class="form__input" type="email" placeholder="Enter your email" name="useremail" required>
+
+        <label for="phone">Phone:</label>
+        <input class="form__input" type="tel" placeholder="Enter mobile No." name="phone" required>
+
+        <label for="password">Password:</label>
+        <input class="form__input" type="password" placeholder="Enter your password" name="password">
+
+        <label for="url">Url:</label>
+        <input class="form__input" type="url" placeholder="Enter url" name="url">
+    </form>
+
+    <form class="form" action="" method="">
+        <div class="inline-inputs">
+            <label for="color">Color:</label>
+            <input class="form__color-input" type="color" name="address">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="phone">Month:</label>
+            <input class="form__input--inline" type="month" name="month">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="number">Age:</label>
+            <input class="form__input--inline" type="number" placeholder="Choose age" name="number">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="search">Search:</label>
+            <input class="form__input--inline" type="search" placeholder="Search" name="search">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="time">Time:</label>
+            <input class="form__input--inline" type="time" name="time">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="week">Week:</label>
+            <input class="form__input--inline" type="week" name="week">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="date">Date:</label>
+            <input class="form__input--inline" type="date" name="date">
+        </div>
+
+        <div class="inline-inputs">
+            <label for="datetime-local">Datetime:</label>
+            <input class="form__input--inline" type="datetime-local" placeholder="Choose date and time" name="datetime-local">
+        </div>
+    </form>
+
+    <form class="form" action="" method="">
+        <label for="Select">Select:</label>
+        <select class="form__select" placeholder="Enter your distric">
+            <option class="form__input" value="option1">Option 1</option>
+            <option class="form__input" value="option2">Option 2</option>
+            <option class="form__input" value="option3">Option 3</option>
+        </select>
+
+        <label for="Select">Textarea:</label>
+        <textarea class="form__textarea" name="textarea" id="" cols="" rows="10" placeholder="Write something"></textarea>
+    </form>
+</body>
+</html>
