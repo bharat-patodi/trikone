@@ -913,9 +913,6 @@ label {
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1rem #dadada, -0.1rem -0.1rem 0.1rem #f3f3f3, inset 1rem 1rem 1rem #e4e4e4; }
-  @media (max-width: 768px) {
-    .form, .form--inset {
-      width: 80%; } }
   .form--inset {
     box-shadow: inset 0.5rem 0.5rem 1rem #c9c9c6, inset -0.5rem -0.5rem 1rem #ffffffef; }
   .form__title, .form__title--center {
@@ -1342,7 +1339,7 @@ Component - Footer
   position: static; }
 
 .neumorphism__main__hero {
-  padding-top: 10rem; }
+  padding-top: 2rem; }
   .neumorphism__main__hero h2 + p {
     margin-bottom: 50px; }
 .neumorphism__main__component-links .grid, .neumorphism__main__component-links .button-wrapper, .neumorphism__main__component-links .button-container {
@@ -1352,7 +1349,7 @@ Component - Footer
   margin: 5rem 0; }
   @media (max-width: 768px) {
     .neumorphism__main__all-components__component .component-display {
-      margin: 0 auto 2rem auto; } }
+      margin-bottom: 2rem; } }
   .neumorphism__main__all-components__component .component-html {
     padding: 0 1rem; }
 

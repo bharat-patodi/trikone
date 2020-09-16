@@ -6,7 +6,7 @@
 .neumorphism__main {
   // Section: Hero Section
   &__hero {
-    padding-top: 10rem;
+    padding-top: 2rem;
     h2 + p {
       margin-bottom: 50px;
     }
@@ -29,7 +29,8 @@
       .component-display {
         // border: 3px solid mediumaquamarine;
         @media (max-width: $breakpoint-tablet) {
-          margin: 0 auto 2rem auto;
+          // margin: 0 auto 2rem auto;
+          margin-bottom: 2rem;
         }
       }
       .component-html {
