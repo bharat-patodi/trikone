@@ -37,6 +37,7 @@
 	padding: 0.25rem 0.8rem;
 	border-radius: 5px;
 	z-index: 1;
+	background-color: $bg-color;
 	@include neumorph-offset(0.5rem, -0.1rem, 0.1rem, 1rem);
 }
 
